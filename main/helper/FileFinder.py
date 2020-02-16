@@ -15,7 +15,7 @@ class FileFinder:
 
   def get_files(self) -> 'FileFinder':
     if not os.path.exists(self.folder):
-      raise Exception("Given folder does not exist!")
+      raise Exception("Folder " + self.folder + " does not exist!")
 
     file_list = {}
 

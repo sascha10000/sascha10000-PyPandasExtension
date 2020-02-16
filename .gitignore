@@ -1,1 +1,5 @@
-main/runs
+runs
+runs_old
+download_runs.sh
+upload_main.sh
+upload_runs.sh
