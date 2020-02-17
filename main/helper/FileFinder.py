@@ -1,5 +1,5 @@
 import os
-from typing import List, Dict
+from typing import List, Dict, Tuple
 
 
 class FileFinder:
@@ -15,7 +15,7 @@ class FileFinder:
 
   def get_files(self) -> 'FileFinder':
     if not os.path.exists(self.folder):
-      raise Exception("Folder " + self.folder + " does not exist!")
+      raise Exception("Folder " + self.folder + " does not exist! Absolute (" + os.path.abspath(self.folder) + ")")
 
     file_list = {}
 
